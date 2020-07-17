@@ -11,17 +11,34 @@ end
 bob = Student.new('bob')
 devin = Student.new('devin')
 james = Student.new('james')
-spencer = Student.new('spencer')
-stanley = Student.new('stanley')
+spencer = Instructor.new('spencer')
+stanley = Instructor.new('stanley')
+spongebob = Student.new("Spongebob")
+patrick= Student.new("Patrick")
+puff= Instructor.new("Ms.Puff")
+krabs= Instructor.new("Mr.Krabs")
+no_crashing = spongebob.add_boating_test("Don't Crash 101", "pending", puff)
+power_steering_failure = patrick.add_boating_test("Power Steering 202", "failed", puff)
+power_steering_pass = patrick.add_boating_test("Power Steering 201", "passed", krabs)
+
+# BoatingTest.all_tests.each do |test| 
+#   puts test.student.first_name
+# end
+# fun= BoatingTest.all_tests.select {|test| test.student.first_name == "Spongebob" || test.student.test_name == "Don't Crash 101" }
+# fun[0].status="passed"
+krabs.pass_student("Spongebob", "Don't Crash 101")
+# BoatingTest.all_tests
 
 # test = BoatingTest.new("Devin", "test", "pass", "teacher")
-test1= BoatingTest.new("Devin", "test1", "pass", "teacher")
-test2=BoatingTest.new("Devin", "test2", "fail", "teacher")
-test3= BoatingTest.new("Devin", "test3", "pass", "teacher")
-test4=BoatingTest.new("Devin", "test4", "pass", "teacher")
-test5 = BoatingTest.new("Devin", "test5", "pass", "teacher")
-test6= BoatingTest.new("James", "test6", "pass", "teacher")
-# bob.add_boating_test("bob", "test1", "status", "teacher")
+# test1= BoatingTest.new(devin, "test1", "pass", spenser)
+# test2=BoatingTest.new(devin, "test2", "fail", spenser)
+# test3= BoatingTest.new(devin), "test3", "pass", spenser)
+# test4=BoatingTest.new(devin, "test4", "pass", spenser)
+# test5 = BoatingTest.new(devin, "test5", "pass", spenser)
+# test6= BoatingTest.new(james, "test6", "pass", spenser)
+# test6= BoatingTest.new(james, "test6", "pass", stanley)
+# bob.add_boating_test("bob", "test1", "status", spenser)
+# bob.add_boating_test("bob", "test1", "status", spenser)
 
 # devin.grade_percentage 
 

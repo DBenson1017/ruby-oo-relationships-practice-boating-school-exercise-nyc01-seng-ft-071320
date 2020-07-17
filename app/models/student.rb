@@ -12,7 +12,7 @@ def initialize(first_name)
     @@all_students << self 
 end 
 
-def add_boating_test(first_name, test_name, status, teacher)
+def add_boating_test(test_name, status, teacher)
     new_test = BoatingTest.new(self, test_name, status, teacher)
     new_test
 end 
