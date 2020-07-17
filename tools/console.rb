@@ -18,15 +18,17 @@ patrick= Student.new("Patrick")
 puff= Instructor.new("Ms.Puff")
 krabs= Instructor.new("Mr.Krabs")
 no_crashing = spongebob.add_boating_test("Don't Crash 101", "pending", puff)
-power_steering_failure = patrick.add_boating_test("Power Steering 202", "failed", puff)
-power_steering_pass = patrick.add_boating_test("Power Steering 201", "passed", krabs)
+push_push = spongebob.add_boating_test("push push", "pending", puff)
+# power_steering_failure = patrick.add_boating_test("Power Steering 202", "failed", puff)
+# power_steering_pass = patrick.add_boating_test("Power Steering 201", "passed", krabs)
 
 # BoatingTest.all_tests.each do |test| 
 #   puts test.student.first_name
 # end
 # fun= BoatingTest.all_tests.select {|test| test.student.first_name == "Spongebob" || test.student.test_name == "Don't Crash 101" }
 # fun[0].status="passed"
-krabs.pass_student("Spongebob", "Don't Crash 101")
+# puff.pass_student("Spongebob", "Don't Crash 101")
+puff.fail_student("Spongebob", "push push")
 # BoatingTest.all_tests
 
 # test = BoatingTest.new("Devin", "test", "pass", "teacher")
